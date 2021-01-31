@@ -1,0 +1,26 @@
+<div class="container mb-5">
+        <h1 class="text-center">Edit</h1>
+<form  action='/updateProd' method='post'>
+{{#each errors}}
+<div class="alert alert-danger">{{msg}}</div>
+{{/each}}
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input type="text" class="form-control" name='title' value={{prod.title}}>
+  </div>
+  <div class="form-group">
+    <label >Price</label>
+    <input type="number" class="form-control" name="price" value={{prod.price}}>
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <textarea type="text" rows='3' class="form-control" name="desc">{{prod.desc}}</textarea>
+  </div>
+  <div class="form-group">
+    <label>quantity</label>
+    <input type="number" rows='3' class="form-control" name="quant" value={{prod.quant}}>
+  </div>
+  <input type="hidden" name='id' value={{prod._id}} >
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

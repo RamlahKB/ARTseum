@@ -1,0 +1,30 @@
+<div class="container mt-5 mb-5">
+    <h1 class="text-center text-info mb-5">View Book</h1>
+    <div class="viewBook mt-5">
+        <div class="container">
+            <div class="row">
+                {{#each prod}}
+                <div class="col-md-4">
+                    <div class="card mb-5">
+                        {{!-- <img src="/images/book_cov.jpg" class="card-img-top" height="250"> --}}
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{title}}</h5>
+                            <p class="card-text">{{price}}</p>
+                            <p class="card-text">{{quant}}</p>
+                            <p class="card-text">{{desc}}</p>
+                            <small class="card-text">{{date}}</small>
+                            <div class="social mb-3">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <a href="/editProd/{{_id}}" class="btn btn-primary btn-block">Edit</a>
+                            <a href="/delProd/{{_id}}" class="btn btn-danger btn-block">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

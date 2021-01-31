@@ -1,0 +1,387 @@
+/*<!----------------------------------- HOME START ------------------------------------->*/
+.home {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: table;
+}
+.home .overlay {
+    background-color: #8a8585;
+    opacity: 0.6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.home_text {
+	text-align: center;
+	margin: 150px;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 40px;
+}
+.home_text h1 {
+	padding: 0px 20px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: 700;
+	font-family: montserrat, sans-serif;
+	margin-bottom: 20px;
+	line-height: 1.1;
+}
+.home_text p {
+	color: #ffffff;
+}
+.btns {
+	padding: 12px 37px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 20px 4px 0px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: varela round, sans-serif;
+	border-radius: 5px;
+    line-height: 1.1;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.home .btns:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.home .btn1 {
+	background-color: #ffffff;
+	border: 2px solid transparent;
+    color: #10161a!important;
+    text-decoration: none;
+}
+.home .btn2 {
+	background-color: #007bff;
+	color: #ffffff;
+    border: 2px solid transparent;
+    text-decoration: none;
+}
+@media screen and (min-width: 300px) and (max-width: 900px) {
+	.home_text {
+		margin: 70px 10px 10px;
+		padding: 0px 10px;
+	}
+	.btns {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (min-width: 430px) and (max-width: 570px) {
+	.home {
+		margin-top: 120px;
+	}
+}
+/*<!------------------------------------ HOME END -------------------------------------->*/
+
+ /*<!---------------------------------------------- ABOUT_PAGE START ------------------------------------------->*/
+ .about h1 {
+    font-size: 50px;
+    color: #3c3f4a;
+  }
+  /*<!----------------------------------- TEAM START ------------------------------------->*/
+.team {
+	position: relative;
+	padding: 70px 0px;
+	text-align: center;
+}
+.team h2 {
+	margin-top: 0px;
+	font-size: 36px;
+	font-family: montserrat, sans-serif;
+    font-weight: 700;
+    color: #10161a;
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+.team h2:after {
+	content: "";
+    display: block;
+    height: 4px;
+    width: 40px;
+    background-color: #6195ff;
+    margin: 20px auto 0px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* .team .row {
+	display: flex;
+	margin: 0px 50px;
+} */
+.team .row .member {
+	padding: 15px 5px;
+    margin: 15px 0;
+}
+.team .row .mem_in {
+	background-color: #f4f4f4;
+	padding: 25px 15px;
+	border-radius: 7px;
+}
+.member::after {
+	content: "";
+	background-color: #1c1d21;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 0%;
+	z-index: 1;
+	-webkit-transition: .2s height;
+	-moz-transition: .2s height;
+	transition: .2s height;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.member:hover:after {
+	height: 100%;
+}
+.member .image {
+	position: relative;
+	margin-bottom: 20px;
+	z-index: 11;
+}
+.member .image>img {
+	width: 100%;
+}
+.member .image .overlay {
+	background: #454546;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	-webkit-transition: .2s opacity;
+	-moz-transition: .2s opacity;
+	transition: .2s opacity;
+}
+.member:hover .image .overlay {
+	opacity: .8;
+}
+.member .mem_text {
+	text-align: center;
+	position: relative;
+	z-index: 11;
+}
+.member .mem_text h3 {
+	margin-bottom: 10px;
+	-webkit-transition: .2s color;
+	transition: .2s color;
+	font-size: 21px;
+	font-family: montserrat,sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    color: #10161a;
+}
+.member .mem_text span {
+	font-size: 14px;
+	text-transform: uppercase;
+	-webkit-transition: .2s color;
+	transition: .2s color;
+}
+.member:hover .mem_text h3 {
+	color: #fff;
+}
+.member:hover .mem_text span {
+	color: #6195ff;
+}
+.member .social {
+	position: absolute; 
+	top: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: .2s opacity;
+	-moz-transition: .2s opacity;
+	transition: .2s opacity;
+}
+.member .social a {
+	display: block;
+	line-height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: #6195ff;
+	color: #fff;
+}
+.member:hover .social {
+	opacity: 1;
+}
+.member .social a:hover {
+	opacity: 0.8;
+}
+@media screen and (min-width: 300px) and (max-width: 900px) {
+	.team .row {
+		display: block;
+		justify-content: center;
+	}
+	.member .mem_text h3 {
+		font-size: 17px;
+	}
+}
+/*<!------------------------------------ TEAM END -------------------------------------->*/
+  /*<!---------------------------------------------- ABOUT_PAGE END ------------------------------------------->*/
+
+  /*<!------------------------ FORM START ---------------------->*/
+.con_form {
+    background-color: #ffffff;
+}
+.con_form .con_text .bg_text {
+	color: #222222;
+	font-size: 32px;
+	font-weight: 400;
+    line-height: 1.2;
+    font-family: 'Circular',sans-serif;
+}
+.con_form .con_text .sm_text {
+	font-size: 16.2px;
+    letter-spacing: -0.3px
+}
+.con_form .form input:focus{
+	outline-color: #5c6ac4;
+}
+.con_form .form textarea:focus{
+	outline-color: #5c6ac4;
+}
+.con_form .form .textarea {
+	width: 100%;
+	height: auto; 
+}
+.btn_4 {
+	background-color: #5c6ac4;
+	color: #ffffff;
+}
+@media screen and (max-width: 991px) {
+	.con_form .con_text {
+    	margin-top: 30px;
+    }
+    .con_form iframe {
+    	height: 480px;
+    }
+}
+/*<!------------------------ FORM END ---------------------->*/
+/*<!------------------------ CONTACT_CARD START ---------------------->*/
+.con_card {
+	background-color: transparent;
+	margin-bottom: 100px;
+}
+.con_card .card {
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.con_card .card:hover {
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
+    transition: transform 0.2s;
+}
+.con_card a {
+	text-decoration: none;
+	color: #666666;
+}
+.con_card a:hover {
+	text-decoration: none;
+	color: #222222;
+}
+.con_card .h5 {
+	font-size: 18px;
+	margin-bottom: 11px;
+	font-weight: 400;
+    color: #222;
+    line-height: 1.2;
+    font-family: 'Circular',sans-serif;
+}
+.con_card .c_style {
+	padding: 35px 30px;
+}
+.con_card .cf_styl {
+	padding: 16px 20px;
+}
+@media screen and (max-width: 991px) {
+	.con_card {
+		margin-bottom: 0px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.con_card .card {
+		margin-top: 30px;
+	}
+}
+/*<!------------------------ CONTACT_CARD END ---------------------->*/
+/*<!---------------------------------------------- CONTACT_PAGE END ------------------------------------------->*/
+
+
+  /*<!---------------------------------- FOOTER START ------------------------------------>*/
+.footer {
+	padding: 60px 0px;
+	position: relative;
+	background-color: #1c1d21;
+	display: table;
+	width: 100%;
+}
+.footer .row {
+	margin: 0px 15px;
+	padding: 0px 15px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+.footer .logo {
+	max-height: 80px;
+}
+.footer .logo .clogo {
+    border-radius: 10px;
+}
+.footer .social {
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+.footer .social li {
+	display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+.footer .social a {
+	margin: 0px;
+	display: block;
+    line-height: 40px;
+    width: 50px;
+    text-align: center;
+    background-color: #6195ff;
+    color: #fff;
+    border-radius: 3px;
+}
+.footer a:hover {
+	opacity: 0.8;
+}
+.footer .f_copy {
+	font-size: 14px;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+.footer .f_copy a {
+	color: #6195ff;
+}
+@media screen and (min-width: 300px) and (max-width: 900px) {
+	.footer .row {
+		display: block;
+	}
+}
+/*<!----------------------------------- FOOTER END ------------------------------------->*/
+

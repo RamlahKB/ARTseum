@@ -1,0 +1,21 @@
+<div class="container mt-5 mb-5">
+    <h1 class="text-center text-info mb-5">View Cat</h1>
+    <div class="viewBook mt-5">
+        <div class="container">
+            <div class="row">
+                {{#each prodCat}}
+                <div class="col-md-4">
+                    <div class="card mb-5">
+                        {{!-- <img src="/images/book_cov.jpg" class="card-img-top" height="250"> --}}
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{category}}</h5>
+                            <a href="/editProdCat/{{_id}}" class="btn btn-primary btn-block">Edit</a>
+                            <a href="/delProdCat/{{_id}}" class="btn btn-danger btn-block">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

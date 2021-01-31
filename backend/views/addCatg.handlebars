@@ -1,0 +1,13 @@
+<div class="col-md-6">
+    <h1 class="text-center">Add Category</h1>
+                <form action="/addProdCat" method="post">
+                    {{#each err}}
+                        <div class="alert alert-danger">{{msg}}</div>
+                    {{/each}}
+                    <div class="form-group">
+                        <label>category</label>
+                        <input type="text" class="form-control" name="category" value="{{category}}">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">SUBMIT</button>
+                </form>
+            </div>

@@ -1,0 +1,25 @@
+<div class="col-md-6">
+    <h1 class="text-center">Add</h1>
+                <form action="/addProd" method="post">
+                    {{#each err}}
+                        <div class="alert alert-danger">{{msg}}</div>
+                    {{/each}}
+                    <div class="form-group">
+                        <label>title</label>
+                        <input type="text" class="form-control" name="title" value="{{title}}">
+                    </div>
+                    <div class="form-group">
+                        <label>price</label>
+                        <input type="number" class="form-control" name="price" value="{{price}}">
+                    </div>
+                    <div class="form-group">
+                        <label>quant</label>
+                        <input type="number" class="form-control" name="quant" value="{{quant}}">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea rows="5" cols="72" name="desc" value="{{desc}}"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">SUBMIT</button>
+                </form>
+            </div>
